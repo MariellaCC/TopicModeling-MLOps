@@ -1,0 +1,5 @@
+# Ignore files and directories
+/CI_newspaper_subcorpora
+/corpus_model.csv
+/stop_words.csv
+/subset.csv
