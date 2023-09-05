@@ -1,0 +1,15 @@
+artifact_uri: file://C:\Users\jpfuq\TopicModeling-MLOps\MLflow\mlruns/539991415813325222/f69d36a2307846ad8a15a2c220ad418d/artifacts
+end_time: 1693914808935
+entry_point_name: ''
+experiment_id: '539991415813325222'
+lifecycle_stage: active
+run_id: f69d36a2307846ad8a15a2c220ad418d
+run_name: gaudy-whale-453
+run_uuid: f69d36a2307846ad8a15a2c220ad418d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693914808711
+status: 3
+tags: []
+user_id: jpfuq

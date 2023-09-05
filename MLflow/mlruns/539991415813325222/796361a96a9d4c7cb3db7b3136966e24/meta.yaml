@@ -1,0 +1,15 @@
+artifact_uri: file://C:\Users\jpfuq\TopicModeling-MLOps\MLflow\mlruns/539991415813325222/796361a96a9d4c7cb3db7b3136966e24/artifacts
+end_time: 1693915243065
+entry_point_name: ''
+experiment_id: '539991415813325222'
+lifecycle_stage: active
+run_id: 796361a96a9d4c7cb3db7b3136966e24
+run_name: enchanting-stork-961
+run_uuid: 796361a96a9d4c7cb3db7b3136966e24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693915242833
+status: 3
+tags: []
+user_id: jpfuq

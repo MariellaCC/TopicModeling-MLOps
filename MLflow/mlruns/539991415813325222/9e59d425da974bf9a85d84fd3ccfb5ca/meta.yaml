@@ -1,0 +1,15 @@
+artifact_uri: file://C:\Users\jpfuq\TopicModeling-MLOps\MLflow\mlruns/539991415813325222/9e59d425da974bf9a85d84fd3ccfb5ca/artifacts
+end_time: 1693914104695
+entry_point_name: ''
+experiment_id: '539991415813325222'
+lifecycle_stage: active
+run_id: 9e59d425da974bf9a85d84fd3ccfb5ca
+run_name: righteous-wasp-105
+run_uuid: 9e59d425da974bf9a85d84fd3ccfb5ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693914104434
+status: 4
+tags: []
+user_id: jpfuq

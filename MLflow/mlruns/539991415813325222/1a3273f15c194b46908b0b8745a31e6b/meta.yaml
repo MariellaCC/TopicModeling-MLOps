@@ -1,0 +1,15 @@
+artifact_uri: file://C:\Users\jpfuq\TopicModeling-MLOps\MLflow\mlruns/539991415813325222/1a3273f15c194b46908b0b8745a31e6b/artifacts
+end_time: 1693914613854
+entry_point_name: ''
+experiment_id: '539991415813325222'
+lifecycle_stage: active
+run_id: 1a3273f15c194b46908b0b8745a31e6b
+run_name: stately-fish-407
+run_uuid: 1a3273f15c194b46908b0b8745a31e6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693914613627
+status: 4
+tags: []
+user_id: jpfuq

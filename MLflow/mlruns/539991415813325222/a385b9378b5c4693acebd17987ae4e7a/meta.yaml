@@ -1,0 +1,15 @@
+artifact_uri: file://C:\Users\jpfuq\TopicModeling-MLOps\MLflow\mlruns/539991415813325222/a385b9378b5c4693acebd17987ae4e7a/artifacts
+end_time: 1693915396674
+entry_point_name: ''
+experiment_id: '539991415813325222'
+lifecycle_stage: active
+run_id: a385b9378b5c4693acebd17987ae4e7a
+run_name: carefree-yak-134
+run_uuid: a385b9378b5c4693acebd17987ae4e7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693915396428
+status: 3
+tags: []
+user_id: jpfuq

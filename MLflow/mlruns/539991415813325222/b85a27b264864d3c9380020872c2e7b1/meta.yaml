@@ -1,0 +1,15 @@
+artifact_uri: file://C:\Users\jpfuq\TopicModeling-MLOps\MLflow\mlruns/539991415813325222/b85a27b264864d3c9380020872c2e7b1/artifacts
+end_time: 1693914686529
+entry_point_name: ''
+experiment_id: '539991415813325222'
+lifecycle_stage: active
+run_id: b85a27b264864d3c9380020872c2e7b1
+run_name: righteous-calf-886
+run_uuid: b85a27b264864d3c9380020872c2e7b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693914686310
+status: 4
+tags: []
+user_id: jpfuq

@@ -1,0 +1,15 @@
+artifact_uri: file://C:\Users\jpfuq\TopicModeling-MLOps\MLflow\mlruns/539991415813325222/4af24dea67e8439d8a1072798003bab7/artifacts
+end_time: 1693915070943
+entry_point_name: ''
+experiment_id: '539991415813325222'
+lifecycle_stage: active
+run_id: 4af24dea67e8439d8a1072798003bab7
+run_name: rebellious-duck-851
+run_uuid: 4af24dea67e8439d8a1072798003bab7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693915070727
+status: 3
+tags: []
+user_id: jpfuq

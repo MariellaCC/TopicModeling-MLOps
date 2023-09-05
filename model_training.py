@@ -1,10 +1,10 @@
-import pandas as pd
-import gensim
-from gensim import corpora
-from gensim.models import LdaModel
-from gensim.test.utils import datapath
-from ast import literal_eval
 import os
+import pandas as pd
+from ast import literal_eval
+from gensim.models import LdaModel
+from ast import literal_eval
+from sklearn.decomposition import LatentDirichletAllocation
+from sklearn.feature_extraction.text import CountVectorizer
 import mlflow
 
 
@@ -24,30 +24,21 @@ import mlflow
 By following this step-by-step execution, the code loads the corpus model data, preprocesses the corpus, trains an LDA model on the preprocessed corpus, and saves the trained model to a file.
 
 """
+import pandas as pd
+import gensim
+from gensim import corpora
+from gensim.models import LdaModel
+from gensim.test.utils import datapath
+from ast import literal_eval
+import os
+import mlflow
 
-# Set the default MLflow requirements for tracking
-mlflow_folder_name = "MLflow"
-current_directory = os.getcwd()
-mlflow_path = os.path.join(current_directory, mlflow_folder_name, "mlruns")
 
-if not os.path.exists(mlflow_path):
-    os.makedirs(mlflow_path)
-    print(f"Folder {mlflow_path} created successfully")
-else:
-    print(f"Folder {mlflow_path} already exists")
 
-mlflow.set_tracking_uri("file://" + mlflow_path)
+experiment_id = mlflow.create_experiment('LDA_modelx')
 
-mlflow_experiment_name = "LDA_model_v1"
-experiment = mlflow.get_experiment_by_name(mlflow_experiment_name)
+with mlflow.start_run(experiment_id =experiment_id):
 
-if experiment is None:
-    mlflow_experiment_id = mlflow.create_experiment(mlflow_experiment_name)
-else:
-    mlflow_experiment_id = experiment.experiment_id
-
-with mlflow.start_run(experiment_id=mlflow_experiment_id):
-    
     def load_corpus_model(file_path):
         """
         Load the corpus model from a CSV file.
@@ -110,9 +101,9 @@ with mlflow.start_run(experiment_id=mlflow_experiment_id):
         """
         model.save(output_path)
 
-        
+
     if __name__ == "__main__":
-        # Define the file paths
+# Define the file paths
         corpus_model_file = 'corpus_model.csv'
         model_output_file = os.path.join(os.getcwd(), 'lda_model')
 
@@ -138,3 +129,4 @@ with mlflow.start_run(experiment_id=mlflow_experiment_id):
         
         # Log the model artifact
         mlflow.log_artifact(model_output_file)
+        

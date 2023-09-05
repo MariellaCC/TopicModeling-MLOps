@@ -1,0 +1,15 @@
+artifact_uri: file://C:\Users\jpfuq\TopicModeling-MLOps\MLflow\mlruns/539991415813325222/951095f84d6242a68eacedb89f488924/artifacts
+end_time: 1693914683888
+entry_point_name: ''
+experiment_id: '539991415813325222'
+lifecycle_stage: active
+run_id: 951095f84d6242a68eacedb89f488924
+run_name: chill-squirrel-456
+run_uuid: 951095f84d6242a68eacedb89f488924
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1693914683671
+status: 4
+tags: []
+user_id: jpfuq
