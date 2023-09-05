@@ -5,6 +5,7 @@ from gensim.models import LdaModel
 from gensim.test.utils import datapath
 from ast import literal_eval
 import os
+import mlflow 
 
 """
 
@@ -90,6 +91,25 @@ def save_model(model, output_path):
 
 
 if __name__ == "__main__":
+    
+# Set the default MLflow requirements for tracking
+    #MLflow Folder name definition
+    mlflow_folder_name = "MLflow"
+    #Get current directory to create MLflow directory 
+    current_directory = os.getcwd()
+    #full path constuction of the MLflow directory to be created
+    mlflow_path = os.path.join(current_directory, mlflow_folder_name, "mlruns")
+
+    #Check if directory exists else create it
+    if not os.path.exists(mlflow_path):
+        os.makedirs(mlflow_path)
+        print(f"Folder {mlflow_path} created successfully")
+    else: 
+        print(f"Folder {mlflow_path} already there")
+
+    #Set tracking URI
+    mlflow.set_tracking_uri("file://" + mlflow_path)
+    
 # Define the file paths
     corpus_model_file = 'corpus_model.csv'
     model_output_file = os.path.join(os.getcwd(), 'lda_model')
@@ -105,41 +125,3 @@ if __name__ == "__main__":
 
 # Save the trained model to a file
     save_model(lda_model, model_output_file)
-
-""""
-
-OLD FOR REF prior to confirmation of the output files for the above automation script
-
-import pandas as pd
-import gensim
-from gensim import corpora
-from gensim.models import LdaModel
-from gensim.test.utils import datapath
-from ast import literal_eval
-
-
-corpus_model = pd.read_csv('corpus_model.csv')
-
-# la ligne suivante est nécessaire car la conversion en csv transforme les arrays en string, ce qui est problématique car ensuite le id2word ne marche pas
-# on pourra enlever cela quand on passera avec un ystème BDD
-# le temps de processing est assez long
-bigrams = corpus_model['bigrams'].apply(literal_eval)
-
-#LDA prep
-
-id2word = corpora.Dictionary(bigrams)
-
-id2word.filter_extremes(no_below=5)
-
-corpus = [id2word.doc2bow(text) for text in bigrams]
-
-num_topics = 7
-
-model = LdaModel(corpus, id2word=id2word, num_topics=num_topics, random_state=100, eval_every = None)
-
-#saving model to file
-
-model_file = datapath("/Users/mariellacc/Documents/GitHub/MLOps-TopicModeling/lda_model")
-
-model.save(model_file)
-"""
