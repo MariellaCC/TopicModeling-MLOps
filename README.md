@@ -28,16 +28,16 @@ Si vous galérez parce que vous avez Windows et pas Linux, suivez les tutos YouT
   1. Créez un dossier nommé `MLflow`.
   2. Dans ce dossier, créez un fichier Python nommé `exemple.py` et insérez le code ci-dessous:
 
-\```python
-import mlflow
-
-path = "/home/ubuntu/MLflow/mlruns"
-mlflow.set_tracking_uri("file://" + path)
-\```
+        \```python
+        import mlflow
+        
+        path = "/home/ubuntu/MLflow/mlruns"
+        mlflow.set_tracking_uri("file://" + path)
+        \```
 Ensuite, assurez-vous de faire un start run avant l'entrainement de chaque modèle:
-\```python
-with mlflow.start_run(experiment_id=experiment_id):
-\```
+        \```python
+        with mlflow.start_run(experiment_id=experiment_id):
+        \```
 
 ### 2. Traçage des données
 - **Intégration de MLflow**:
