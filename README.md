@@ -4,9 +4,9 @@
 
 ### 1. Installation de MLflow
 Installez `mlflow` sur votre environnement Python:
-\```
+```
 pip install mlflow
-\```
+```
 
 ### 2. Compatibilité et dépendances
 Pour une installation complète incluant les dépendances courantes de MLflow, utilisez :
