@@ -48,7 +48,7 @@ with mlflow.start_run(experiment_id=experiment_id):
 
 Pour sauvegarder un modèle, utilisez `mlflow.log_model`. Dans la dernière version, cela ne marchait pas avec la librairie Gensim, alors on ne pourra peut-être pas le faire. À voir si cela change avec les nouvelles versions de MLflow.
 
-\```python
+```python
 fig.savefig("regression_plot.png")
 plt.close(fig)
 
@@ -56,7 +56,7 @@ plt.close(fig)
 mlflow.log_artifact("hehe.png")
 data.to_csv('italian_corpora_1997.txt', encoding='utf-8', index=False)
 mlflow.log_artifact('italian_corpora_1997.txt')
-\```
+```
 
 - **Structure des fichiers**:
   À l'exécution, un dossier `mlruns/` sera créé contenant les expériences MLflow. Chaque expérience aura son propre ID, et à l'intérieur, vous trouverez des dossiers pour chaque entraînement avec leurs métriques, paramètres, artefacts et tags, etc.
