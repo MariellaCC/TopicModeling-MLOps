@@ -54,18 +54,17 @@ Si vous galerez pq vous avez Windows et pas Linux, suivez les tutos YouTube, on 
   
   Pour sauvegarder un modèle, utilisez `mlflow.log_model`. Dans la dernière version cela ne marchait pas avec la librairie Gensim, alors on ne pourra peut-être pas le faire. A voir si cela change aves les nouvelles versions de MLflow.
 
-  Exemple:
 
   ```python
-     # Enregistrement du plot produit
-        fig.savefig("regression_plot.png")
+  
+fig.savefig("regression_plot.png")
 
-        plt.close(fig)
+plt.close(fig)
 
-        # artifacts (output files)
-        mlflow.log_artifact("hehe.png")
-        data.to_csv('italian_corpora_1997.txt', encoding = 'utf-8', index=False)
-        mlflow.log_artifact('italian_corpora_1997.txt')
+# artifacts (output files)
+mlflow.log_artifact("hehe.png")
+data.to_csv('italian_corpora_1997.txt', encoding = 'utf-8', index=False)
+mlflow.log_artifact('italian_corpora_1997.txt')
 
      ```
 
